@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Vector.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Flow Field</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <canvas id="app-canvas"></canvas>
+    <button id="toggle-btn">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </button>
+    <div id="control-menu" class="controls">
+      <ul>
+        <li>
+          <p>total particles</p>
+          <input type="range" min="1" max="4000" step="20" name="total-particles" id="total-particles-input">
+        </li>
+        <li>
+          <p>text</p>
+          <input type="text" name="text" id="text-input">
+        </li>
+      </ul>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
